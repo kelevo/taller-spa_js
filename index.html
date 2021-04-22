@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA con JS vanilla</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><button onclick="router.loadRoute('')">home</button></li>
+            <li><button onclick="router.loadRoute('contacto')">contacto</button></li>
+            <li><button onclick="router.loadRoute('about')">about me</button></li>
+        </ul>
+    </header>
+
+    <div data-router="">
+        <!--Los <h1> llegaran dinamicamente desde JS-->
+    </div>
+
+    <script src="./router.js"></script>
+    <script src="./routes.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
